@@ -1,0 +1,8 @@
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget class="Team2FeaturedProducts\FeaturedProducts\Block\Widget\FeaturedProducts" id="feats_widget">
+        <label>My New Widget</label>
+        <description>This is a test widget!!!</description>
+
+    </widget>
+</widgets>
