@@ -1,0 +1,78 @@
+.copyright{
+    background-color: white;
+    text-align: left;
+}
+.service-widget {
+    flex-direction: row;
+    justify-content: left;
+}
+
+.service-widget {
+    flex-direction: column;
+}
+.service-widget {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.container {
+    max-width: 87.5%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+.service-widget .service-content {
+    text-align: left;
+}
+
+.service-widget .service-content {
+    text-align: center;
+}
+.service-widget .service-title {
+    font: 700 1.4rem/1 "Poppins","Open Sans",sans-serif;
+    color: #222529;
+    text-transform: uppercase;
+}
+section{
+    display: block;
+}
+.row-sm{
+    display: flex;
+    justify-content: space-between;
+}
+.service-widget .service-title {
+    font: 700 1.4rem/1 "Poppins","Open Sans",sans-serif;
+    color: #222529;
+    text-transform: uppercase;
+}
+.service-widget p {
+    font: 300 1.3rem "Open Sans",sans-serif;
+    line-height: 22px;
+    color: #777;
+    letter-spacing: 0.01em;
+    margin-bottom: 0;
+
+}
+.service-widget{
+    display: flex;
+    flex-direction: column;
+}
+i {
+    margin-right: 1rem;
+    font-size: 35px;
+}
+
+.service-widget .service-icon {
+    margin-right: 0;
+}
+.service-widget .service-icon {
+    font-size: 4rem;
+    color: #222529;
+    margin-right: .8rem;
+}
+.service-widget .service-title {
+    font: 700 1.4rem/1 "Poppins","Open Sans",sans-serif;
+    color: #222529;
+    text-transform: uppercase;
+}

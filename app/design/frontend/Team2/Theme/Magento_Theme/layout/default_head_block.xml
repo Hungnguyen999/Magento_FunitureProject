@@ -3,5 +3,8 @@
     <!-- <css scr="css/fontawesome/fontawesome.less" />
     <css scr="css/fontawesome/regular.less" />
     <css scr="css/fontawesome/solid.less" /> -->
+        <css src="css/style.css"/>
+        <css src="https://use.fontawesome.com/releases/v5.7.0/css/all.css" src_type="url"/>
+        <css src="css/local.css"/>
     </head>
 </page>
