@@ -229,7 +229,7 @@ li.product-item:hover .quick-view-btn-container {
 }
 
 .cms-home span.special-price-product {
-    font-size: 16px;
+    font-size: 1.7rem;
     font-weight: bold;
 }
 
@@ -253,4 +253,8 @@ li.product-item:hover .quick-view-btn-container {
 }
 .cms-home .discount .slg {
     font-size: 13px;
+}
+.cms-home .discount-price-product {
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
 }

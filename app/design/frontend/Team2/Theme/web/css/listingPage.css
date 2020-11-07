@@ -36,9 +36,9 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     padding-bottom: 1rem;
-    border-bottom: 0.2rem solid #dfdfdf;
-    margin-bottom: 3rem;
+    border-bottom: 1px solid gray;
     font-size: 1.2rem;
+    margin-bottom: 2rem;
   }
   .page-with-filter .filter-options-title:hover {
     cursor: pointer;
@@ -51,6 +51,7 @@
     padding-bottom: 1.5rem;
     text-transform: capitalize;
     padding-left: 1rem;
+    line-height: 1rem;
   }
   .page-with-filter .filter-options-content .items .my a {
     text-transform: capitalize;
@@ -275,3 +276,23 @@
   .page-with-filter .toolbar-products .toolbar-amount {
     display: none;
   }
+
+  .page-with-filter .modes-mode {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 24px;
+    line-height: inherit;
+    color: #7d7d7d;
+    content: '\e60d';
+    font-family: 'icons-blank-theme';
+    vertical-align: middle;
+    display: inline-block;
+    font-weight: normal;
+    overflow: hidden;
+    speak: none;
+    text-align: center;
+}
+.page-with-filter .filter-options-item {
+  border: none !important;
+  padding: 0 !important;
+}

@@ -19,7 +19,7 @@
     font-size: 14px !important;
     font-weight: 600 !important;
 }
-.product-item .product-upsell-hung .product-item-details  .product-reviews-summary .rating-summary {
+.product-upsell-hung .product-item-details .rating-summary {
     display: flex;
     justify-content: center;
     margin: 0%;
@@ -30,11 +30,11 @@
     font: 600 1.8rem/0.8 "Poppins","Open Sans",sans-serif !important;
     flex-direction: row-reverse;
 }
-.product-upsell-hung .product-item-details  .product-reviews-summary .rating-summary {
+/* .product-upsell-hung .product-item-details  .product-reviews-summary .rating-summary {
     position: relative;
     text-align: left;
     left: 0%;
-}
+} */
 .product-upsell-hung .product-item-name {
     width: 15rem;
 }

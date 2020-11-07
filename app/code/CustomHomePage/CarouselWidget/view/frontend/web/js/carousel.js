@@ -10,10 +10,10 @@ define([
         items: 1, 
         nav: true,
         autoplay:false,
-        autoplayTimeout:1000,
+        autoplayTimeout:5000,
         autoplayHoverPause:true,
         dots: false,
-        navText : ["<span class='icon-chevron-left'></span>","<span class='icon-chevron-right'></span>"]
+        navText : ["<i class='fas fa-chevron-left'></i>","<i class='fas fa-chevron-right'></i>"]
 
     });
     $('.owl-carousel').owlCarousel({
@@ -24,7 +24,7 @@ define([
         autoplayTimeout:1000,
         autoplayHoverPause:true,
         dots: true,
-        navText : ["<span class='icon-chevron-left'></span>","<span class='icon-chevron-right'></span>"],
+        navText : ["<i class='fas fa-chevron-left'></i>","<i class='fas fa-chevron-right'></i>"],
         itemsDesktop : [1199,3],
         itemsDesktopSmall : [900,3], // betweem 900px and 601px
         itemsTablet: [700,2], // 2 items between 600 and 480

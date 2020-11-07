@@ -154,7 +154,6 @@ switch ($type = $block->getType()) {
   
     <div class="block-content content" aria-labelledby="block-<?= /* @escapeNotVerified */ $class ?>-heading">        
         <?php if($type == 'upsell'):?>
-     
         <div class="products wrapper products-<?= /* @escapeNotVerified */ $type ?>">
             <div class="block-title title">
                 <strong id="block-<?= /* @escapeNotVerified */ $class ?>-heading" role="heading" aria-level="2"><?= /* @escapeNotVerified */ $title ?></strong>
@@ -197,10 +196,16 @@ switch ($type = $block->getType()) {
                             <strong class="product name product-item-name"><a class="product-item-link" title="<?= $block->escapeHtml($_item->getName()) ?>" href="<?= /* @escapeNotVerified */ $block->getProductUrl($_item) ?>">
                                 <?= $block->escapeHtml($_item->getName()) ?></a>
                             </strong>
-                            <?php if ($type == 'upsell'): ?>
-                                <?= $block->getReviewsSummaryHtml($_item, $templateType, false); ?>
+                            <?php if ($templateType): ?>
+                                <?= $block->getReviewsSummaryHtml($_item, $templateType,false) ?>
                             <?php endif; ?>
-
+                            <?php if ((int)$_item->getReviewsCount()==0) : ?>
+                                <div class="rating-summary" id="rating-summary-none">
+                                    <div class="rating-result" title="0%">
+                                        <span style="width: 0%;"><span>0%</span></span>
+                                    </div>
+                                </div>
+                            <?php endif; ?>
                             <?= /* @escapeNotVerified */ $block->getProductPrice($_item) ?>
                                 <?php if ($canItemsAddToCart && !$_item->isComposite() && $_item->isSaleable() && $type == 'related'): ?>
                                     <?php if (!$_item->getRequiredOptions()): ?>

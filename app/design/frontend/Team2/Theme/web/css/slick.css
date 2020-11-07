@@ -1,5 +1,5 @@
 /* Slider */
-.slick-slider
+.catalog-product-view .slick-slider
 {
     position: relative;
 
@@ -18,7 +18,7 @@
     -webkit-tap-highlight-color: transparent;
 }
 
-.slick-list
+.catalog-product-view .slick-list
 {
     position: relative;
 
@@ -28,18 +28,18 @@
     margin: 0;
     padding: 0;
 }
-.slick-list:focus
+.catalog-product-view .slick-list:focus
 {
     outline: none;
 }
-.slick-list.dragging
+.catalog-product-view .slick-list.dragging
 {
     cursor: pointer;
     cursor: hand;
 }
 
-.slick-slider .slick-track,
-.slick-slider .slick-list
+.catalog-product-view .slick-slider .slick-track,
+.catalog-product-view .slick-slider .slick-list
 {
     -webkit-transform: translate3d(0, 0, 0);
        -moz-transform: translate3d(0, 0, 0);
@@ -48,7 +48,7 @@
             transform: translate3d(0, 0, 0);
 }
 
-.slick-track
+.catalog-product-view .slick-track
 {
     position: relative;
     top: 0;
@@ -58,23 +58,23 @@
     margin-left: auto;
     margin-right: auto;
 }
-.slick-track:before,
-.slick-track:after
+.catalog-product-view .slick-track:before,
+.catalog-product-view .slick-track:after
 {
     display: table;
 
     content: '';
 }
-.slick-track:after
+.catalog-product-view .slick-track:after
 {
     clear: both;
 }
-.slick-loading .slick-track
+.catalog-product-view .slick-loading .slick-track
 {
     visibility: hidden;
 }
 
-.slick-slide
+.catalog-product-view .slick-slide
 {
     display: none;
     float: left;
@@ -86,27 +86,27 @@
 {
     float: right;
 }
-.slick-slide img
+.catalog-product-view .slick-slide img
 {
     display: block;
 }
-.slick-slide.slick-loading img
+.catalog-product-view .slick-slide.slick-loading img
 {
     display: none;
 }
-.slick-slide.dragging img
+.catalog-product-view .slick-slide.dragging img
 {
     pointer-events: none;
 }
-.slick-initialized .slick-slide
+.catalog-product-view .slick-initialized .slick-slide
 {
     display: block;
 }
-.slick-loading .slick-slide
+.catalog-product-view.slick-loading .slick-slide
 {
     visibility: hidden;
 }
-.slick-vertical .slick-slide
+.catalog-product-view .slick-vertical .slick-slide
 {
     display: block;
 
@@ -114,14 +114,14 @@
 
     border: 1px solid transparent;
 }
-.slick-arrow.slick-hidden {
+.catalog-product-view .slick-arrow.slick-hidden {
     display: none;
 }
-.slick-prev, .slick-next{
+.catalog-product-view .slick-prev, .catalog-product-view .slick-next{
     color: black;
     font-size: 15px;
 }
-.slick-disabled {
+.catalog-product-view .slick-disabled {
     opacity: 0.2;
 }
 

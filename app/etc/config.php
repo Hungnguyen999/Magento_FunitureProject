@@ -314,6 +314,8 @@ return [
         'Team2FeaturedCategory_FeaturedCategory' => 1,
         'Team2FeaturedProducts_FeaturedProducts' => 1,
         'Team2Quantity_AddQuantity' => 1,
+        'Team2Related_Module' => 1,
+        'Team2Upsell_ModuleUpsell' => 1,
         'Team2_MultipleLayeredNavigation' => 1,
         'Temando_ShippingRemover' => 1,
         'Vertex_Tax' => 1,

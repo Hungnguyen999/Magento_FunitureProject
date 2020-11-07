@@ -1,5 +1,6 @@
 section {
-    margin-bottom: 2rem;
+    margin-bottom: -3rem;
+    padding-top: 1rem;
 }
 
 .home-banner {
@@ -9,6 +10,7 @@ section {
     position: relative;
     margin-left: -50vw;
     left: 50%;
+    margin-bottom: -3rem;
 }
 
 .height-x3 {
@@ -35,6 +37,13 @@ section {
     text-decoration: none;
     color: white;
 }
+@media only screen and (max-width: 768px) {
+    #shopbutton {
+        text-decoration: none;
+        color: #606ea6;
+    }
+}
+
 .imagebanner {
     height: 300px;
     width: 100vw;
@@ -137,6 +146,7 @@ section {
     justify-content: space-between;
     flex-wrap: wrap-reverse;
     align-items: center;
+    padding-top: 5rem;
 }
 
 .home-banner .banner-content.full-content {
@@ -174,6 +184,7 @@ figure {
     margin-bottom: 1rem;
     font-size: 4.5rem;
     font-weight: bold;
+    margin: 0;
 }
 
 .home-banner .banner-content.full-content button {
@@ -316,10 +327,16 @@ figure {
 
 /* khoang trong */
 .trong {
-    height: 92px;
+    height: 80px;
     position: relative;
     background: white;
-    bottom: 104px;
+    bottom: 90px;
     z-index: 1;
     width: 100%;
+}
+
+/*hung fix*/
+.banner-footer-container section {
+    padding: 0;
+    margin: 0;
 }

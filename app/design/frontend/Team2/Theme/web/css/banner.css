@@ -166,9 +166,9 @@
 }
 
 
-.icon-chevron-right,
-.icon-chevron-left  {
-    font-size: 30px;
+.fa-chevron-left,
+.fa-chevron-right  {
+    font-size: 2rem;
 }
 /* End of Carousel */
 .row::after {
