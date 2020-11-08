@@ -123,6 +123,11 @@
     padding: 0.6rem 0rem 0.6rem 0;
     border: 1px solid;
   }
+  @media only screen and (max-width: 540px) {
+    .page-with-filter .filter-title {
+      display: block;
+    }
+  }
   @media only screen and (max-width: 414px) {
     .page-with-filter .product-list-view.product-items .action.towishlist:before,
     .page-with-filter
@@ -276,15 +281,18 @@
   .page-with-filter .toolbar-products .toolbar-amount {
     display: none;
   }
-
-  .page-with-filter .modes-mode {
+  .page-with-filter .filter-options-item {
+    border: none !important;
+    padding: 0 !important;
+  }
+  .page-with-filter .modes-mode .mode-grid::before {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size: 24px;
     line-height: inherit;
     color: #7d7d7d;
     content: '\e60d';
-    font-family: 'icons-blank-theme';
+    font-family: 'icons-luma-theme';
     vertical-align: middle;
     display: inline-block;
     font-weight: normal;
@@ -292,7 +300,61 @@
     speak: none;
     text-align: center;
 }
-.page-with-filter .filter-options-item {
-  border: none !important;
-  padding: 0 !important;
+
+.page-with-filter .modes-mode .mode-list::before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 24px;
+  line-height: inherit;
+  color: #7d7d7d;
+  content: '\e60b';
+  font-family: 'icons-luma-theme';
+  vertical-align: middle;
+  display: inline-block;
+  font-weight: normal;
+  overflow: hidden;
+  speak: none;
+  text-align: center;
+}
+.page-with-filter .modes-mode .mode-grid span, .page-with-filter .modes-mode .mode-list span {
+  display: none;
+}
+
+/*Sticky filter*/
+.page-with-filter .sidebar.sidebar-main {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+@media only screen and (max-width: 540px) {
+    .page-with-filter .sidebar.sidebar-main .active .filter-content .filter-subtitle {
+      text-transform: uppercase;
+      font: 600 1.2rem/1.4 "Poppins", "Open Sans", sans-serif;
+      color: white;
+      z-index: 2;
+      font-size: 1.7rem;
+      width: 50%;
+    }
+    .page-with-filter .sidebar.sidebar-main .active .filter-title {
+      background: gray;
+    }
+    .filter.active .filter-title strong:after {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-size: 30px;
+      line-height: inherit;
+      color: white;
+      content: '\e616';
+      font-family: 'icons-blank-theme';
+      vertical-align: middle;
+      display: inline-block;
+      font-weight: 900;
+      overflow: hidden;
+      speak: none;
+      text-align: center;
+      padding-bottom: 1rem;
+  }
+  .page-with-filter .toolbar-products .field.limiter, .page-with-filter .toolbar-products .toolbar-sorter.sorter {
+    margin-top: 2.5rem;
+  }
 }

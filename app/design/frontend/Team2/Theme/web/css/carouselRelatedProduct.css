@@ -82,3 +82,14 @@
     font-weight: 900 !important;
     text-transform: capitalize !important;
 }
+.catalog-product-view  .related .block-content h4 {
+    color: black;
+    cursor: pointer;
+    width: 100%;
+    background-color: transparent;
+    text-decoration: none;
+    font: 600 1.2rem/1.1 "Poppins","Open Sans",sans-serif;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: all .2s ease-out
+}

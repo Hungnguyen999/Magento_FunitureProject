@@ -94,7 +94,7 @@ abs-product-link > a:hover, .product-item-name > a:hover, .product.name a > a:ho
     -ms-transform: scale(1.18); /* IE 9 */
     -webkit-transform: scale(1.18); /* Safari 3-8 */
     transform: scale(1.18); 
-    box-shadow: 3px 3px 3px 3px#888888;
+    box-shadow: 1px 1px 1px 1px#888888;
     border: 2px solid #adc9ed;
 }
 #owlcarousel_upsell .owl-stage-outer .owl-stage .owl-item {

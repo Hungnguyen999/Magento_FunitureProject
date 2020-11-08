@@ -1,7 +1,9 @@
 <?xml version="1.0"?>
-<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">   
     <widget  id="teamdetailpage"
-            class="Team2DetailPage\CustomHTMLBlock\Block\Widget\customHTMLBlock">
+            class="Team2DetailPage\CustomHTMLBlock\Block\Widget\CustomHtmlBlock">
         <label> HTML block detail page </label>
         <description>HTML block detail page </description>
 

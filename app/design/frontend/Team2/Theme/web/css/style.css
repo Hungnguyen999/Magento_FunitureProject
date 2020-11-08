@@ -408,4 +408,11 @@ section {
 {
       padding-left: 0 !important;
 }
-  
+@media only screen and (max-width: 540px) {
+    .cms-home .columns .column.main {
+        padding: 0;
+    }
+    .cms-home .banner-footer-container {
+        display: none;
+    }
+}

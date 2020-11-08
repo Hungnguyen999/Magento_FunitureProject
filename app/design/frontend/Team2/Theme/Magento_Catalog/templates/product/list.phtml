@@ -241,16 +241,14 @@ $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
                                 </strong>
                                 <?= $block->getReviewsSummaryHtml($_product, $templateType) ?>
                                 <?php if ((int)$_product->getReviewsCount() == 0) : ?>
-                                            <div class="abc">
-                                                <div class="rating-summary" id="rating-summary-none">
-                                                    <div class="rating-result" title="0%">
-                                                        <span style="width: 0%;"><span>0%</span></span>
-                                                    </div>
-                                                </div>
+                                    <div class="abc">
+                                        <div class="rating-summary" id="rating-summary-none">
+                                            <div class="rating-result" title="0%">
+                                                <span style="width: 0%;"><span>0%</span></span>
                                             </div>
-
-
-                                        <?php endif; ?>
+                                        </div>
+                                    </div>
+                                <?php endif; ?>
                                 <?php if ($_product->isAvailable()):?>
                                     <?= $block->getProductDetailsHtml($_product) ?>
                                 <?php endif; ?>
