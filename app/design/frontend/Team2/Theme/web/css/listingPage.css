@@ -6,12 +6,12 @@
   .filter-options-title:after {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-size: 12px;
-    content: "+";
+    font-size: 15px;
+    font-weight: 600;
+    content: "\002B";
     font-family: "Font Awesome 5 Pro";
     vertical-align: middle;
     display: inline-block;
-    font-weight: bolder;
     overflow: hidden;
     speak: none;
     text-align: center;
@@ -19,7 +19,9 @@
     padding-right: 5px;
   }
   .active > .filter-options-title:after {
-    content: "-";
+    content: "\2212";
+    font-size: 20px;
+    font-weight: 600;
   }
   
   .page-with-filter .filter-options-title {
@@ -150,7 +152,7 @@
   }
   
   /*HOVER change image list.phtml */
-  .page-with-filter .image {
+  .page-with-filter .image-hung {
     opacity: 1;
     display: block;
     width: 100%;
@@ -165,7 +167,7 @@
     height: 61%;
   }
   @media only screen and (max-width: 768px) {
-    .page-with-filter .image {
+    .page-with-filter .image-hung {
       padding-top: 8%;
       padding-right: 6%;
       padding-bottom: 1.5%;
@@ -174,7 +176,7 @@
     }
   }
   @media only screen and (max-width: 414px) {
-    .page-with-filter .image {
+    .page-with-filter .image-hung {
       padding-top: 8%;
       padding-right: 6%;
       padding-bottom: 2.5%;
@@ -184,7 +186,7 @@
   }
   
   /*responisive page filer LISTview*/
-  .page-with-filter .product-list-view .image {
+  .page-with-filter .product-list-view .image-hung {
     opacity: 1;
     display: block;
     width: 100%;
@@ -198,7 +200,7 @@
     padding-left: 1.5%;
   }
   @media only screen and (max-width: 768px) {
-    .page-with-filter .product-list-view .image {
+    .page-with-filter .product-list-view .image-hung {
       opacity: 1;
       display: block;
       width: 100%;
@@ -214,7 +216,7 @@
     }
   }
   @media only screen and (max-width: 414px) {
-    .page-with-filter .product-list-view .image {
+    .page-with-filter .product-list-view .image-hung {
       opacity: 1;
       display: block;
       width: 100%;
@@ -323,7 +325,7 @@
 /*Sticky filter*/
 .page-with-filter .sidebar.sidebar-main {
   position: sticky;
-  top: 0;
+  top: 30px;
   z-index: 3;
 }
 @media only screen and (max-width: 540px) {
@@ -356,5 +358,8 @@
   }
   .page-with-filter .toolbar-products .field.limiter, .page-with-filter .toolbar-products .toolbar-sorter.sorter {
     margin-top: 2.5rem;
+  }
+  .page-with-filter .toolbar-products .modes {
+    display: block;
   }
 }

@@ -81,4 +81,38 @@ define([
             // ]
         });
     });
+
+
+    //list vendor
+    $('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [
+            {
+                breakpoint: 1024, // 800x600
+                settings: { slidesToShow: 6 }
+            },
+            {
+                breakpoint: 800, // 768x1024
+                settings: { slidesToShow: 4 }
+            },
+            {
+                breakpoint: 768, // 600x800
+                settings: { slidesToShow: 3 }
+            },
+            {
+                breakpoint: 600, // 480x320
+                settings: { slidesToShow: 2 }
+            },
+            {
+                breakpoint: 480, // 320x480
+                settings: { slidesToShow: 2 }
+            }
+        ]
+    });
 });

@@ -45,7 +45,7 @@ require([
 			},
 			change: function( event, ui ) {
             
-				window.location.href = price_url.replace("price=","price="+ui.values[0]+"-"+ui.values[1]);
+				window.location.href = price_url.replace("price=","price="+ui.values[0]+"-"+ui.values[1]+".01");
 			}
 		});
 		updateLabel();
