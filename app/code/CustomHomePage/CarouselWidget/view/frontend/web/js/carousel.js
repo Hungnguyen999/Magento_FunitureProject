@@ -80,6 +80,50 @@ define([
             //     }
             // ]
         });
+
+        // Validate category banner
+        $(document).ready(function () {
+            var griditem = $('.grid-item');
+            var griditem0 = griditem[0];
+            var griditem1 = griditem[1];
+
+            var cthome0 = griditem.find('.ct-home-banner')[0];
+            var image0 = $(cthome0).children(".col-12")[0];
+            var image00 = $(image0).children(".category-image")[0];
+
+            var cthome1 = griditem.find('.ct-home-banner')[1];
+            var image1 = $(cthome1).find('.thumbnail')[0]
+
+            var cthome2 = griditem.find('.ct-home-banner')[2];
+            var image2 = $(cthome2).find('.image_mobile')[0]
+
+            console.log(image2);
+            // neu hinh 0 ko co
+            if(image00 === undefined) {
+                $(griditem0).remove();
+                $(griditem1).attr("class","grid-item col-lg-12 ct-height-x1");
+
+            }
+            // neu hinh 1 ko co
+            if(image1 === undefined) {
+                $(cthome1).parent().remove();
+                $(cthome2).parent().attr('class','col-12 col-lg-12 col-sm-12');
+                $(cthome2).parent().parent().css("flex-wrap","nowrap");
+            }
+            // neu hinh 2 ko co
+            if(image2 === undefined) {
+                $(cthome2).parent().remove();
+                $(cthome1).parent().attr('class','col-12 col-lg-12 col-sm-12');
+                $(cthome1).parent().parent().css("flex-wrap","nowrap");
+            }
+            // neu hinh 1,2 ko co
+            if(image2 === undefined && image1 === undefined) {
+                $(griditem1).remove();
+                $(griditem0).attr('class','grid-item col-lg-12 ct-height-x1');
+                $(image0).css('height','400px');
+            }
+        });
+
     });
 
 

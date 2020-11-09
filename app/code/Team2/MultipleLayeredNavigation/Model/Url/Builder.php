@@ -40,7 +40,7 @@ class Builder extends \Magento\Framework\Url {
 		$urlVar = $parts['query'];
 		$urlVar = preg_replace('/&p=[0-9]+/', '', $urlVar); 
 		// echo "<br>";
-		// print_r( $parts); echo "<br>";
+		// print_r( $parts); echo "<br>"; 
 		$newUrl = "{$parts['scheme']}://{$parts['host']}{$parts['path']}?".$urlVar;
 		return $newUrl;
 	}

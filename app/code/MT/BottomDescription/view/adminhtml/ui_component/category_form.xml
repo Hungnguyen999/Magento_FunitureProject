@@ -15,7 +15,7 @@
                 </item>
             </argument>
             <settings>
-                <label translate="true">Description Bottom</label>
+                <label translate="true">Description Right</label>
                 <dataScope>description_bottom</dataScope>
             </settings>
             <formElements>

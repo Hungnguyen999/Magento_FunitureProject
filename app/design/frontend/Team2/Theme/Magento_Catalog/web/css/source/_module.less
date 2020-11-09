@@ -495,7 +495,7 @@
     .product-info-main,
     .product-options-bottom {
         .price-box {
-            position: relative;
+            // position: relative;
             .price-including-tax + .price-excluding-tax,
             .weee + .price-excluding-tax,
             .weee {
@@ -530,14 +530,15 @@
                 white-space: nowrap;
             }
             .old-price{
-                position: absolute;
-                top: 47px;
-                left: 95px;
+                // position: absolute;
+                // top: 47px;
+                // left: 95px;
+                display: inline-block;
+                float: left;
+                // margin: 10px 0;
+                margin-right: 2px;
                 .price-container.price-final_price.tax.weee{
                     .price-wrapper{
-                        .price::before{
-                            content: '';
-                        }
                         .price{
                             color: #111;
                             // text-decoration: line-through;
@@ -559,8 +560,8 @@
         }
 
         .special-price {
-            display: block;
-            margin: @indent__s 0;
+            display: inline-block;
+            // margin: @indent__s 0;
 
             .price-container {
                 .lib-font-size(14);
@@ -571,14 +572,14 @@
             }
         }
 
-        .old-price,
-        .special-price {
-            .price-label {
-                &:after {
-                    content: ': ';
-                }
-            }
-        }
+        // .old-price,
+        // .special-price {
+        //     .price-label {
+        //         &:after {
+        //             content: ': ';
+        //         }
+        //     }
+        // }
 
         .box-tocart {
             margin: @indent__base 0;
