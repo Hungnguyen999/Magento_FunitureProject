@@ -46,6 +46,18 @@ define([
             }
         }
     });
+    // hong-tao
+    $('#hong-tao-man').slick({
+        loop: true,
+        items: 5,
+        nav: true,
+        autoplay: false,
+        autoplayTimeout: 1000,
+        autoplayHoverPause: true,
+        
+
+    });
+
 
     /** Related product in detail page */
     jQuery(document).ready(function () {

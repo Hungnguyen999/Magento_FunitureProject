@@ -1,0 +1,12 @@
+<?php
+use Magento\Framework\View\Element\Template;
+/** @var Template $block */
+?>
+<div>
+<!-- Get order total
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$cart = $objectManager->get('\Magento\Checkout\Model\Cart'); 
+$grandTotal = $cart->getQuote()->getGrandTotal();
+-->
+    hung reo <p><?=$block->getData('reward_point'); ?></p>
+</div>

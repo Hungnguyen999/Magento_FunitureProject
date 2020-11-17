@@ -1,19 +1,14 @@
-/* Div cha */
+
 /* #tuan {
     margin-left: -1rem;
 } */
 
 /* Title list */
-#tuan .title-bottom { 
+/* #tuan .title-bottom { 
     padding-bottom: 1rem;
     border-bottom: 0.2px solid #dfdfdf;
 }
 #tuan .title-bottom .widget-title{
-    /* font-weight: 700;
-    border-bottom: 1px solid #e8e0d9;
-    text-transform: uppercase;
-    padding-bottom: 2px;
-    padding-top: 2rem; */
     color: black;
     cursor: pointer;
     width: 100%;
@@ -138,15 +133,15 @@
 }
 .ratings .product-reviews-summary {
     margin: 0;
-}
-.ratings .product-reviews-summary .reviews-actions {
+} */
+/* .ratings .product-reviews-summary .reviews-actions {
     display: none;
-}
+} */
 /* label discount */
-.image-product-tuan {
+/* .image-product-tuan {
     position: relative;
-}
-.image-product-tuan .discount_percent1 {
+} */
+/* .image-product-tuan .discount_percent1 {
     position: absolute;
     top: 0px;
     right: 0px;
@@ -155,13 +150,13 @@
     color: #fff;
     font-size: 1rem;
     padding: 2px 5px;
-}
+} */
 /* Start */
-#tuan .product-default .product-details .ratings-container .product-ratings .ratings .product-reviews-summary .rating-summary{
+/* #tuan .product-default .product-details .ratings-container .product-ratings .ratings .product-reviews-summary .rating-summary{
     left: -1px;
-}
+} */
 /* Price */
-#tuan .product-widget .price-box .price-box {
+/* #tuan .product-widget .price-box .price-box {
     display: flex;
     flex-direction: row-reverse;
 }
@@ -204,4 +199,4 @@
     .catalog-product-view #tuan {
         display: none;
     }
-}
+} */

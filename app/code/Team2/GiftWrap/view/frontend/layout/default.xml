@@ -1,0 +1,22 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Team2_GiftWrap::css/owlcarousel/owl.carousel.min.css"/>
+        <css src="Team2_GiftWrap::css/owlcarousel/owl.theme.default.min.css" />
+        <css src="Team2_GiftWrap::css/style.css"/>
+        <css src="Team2_GiftWrap::css/slick.css"/>
+        <css src="Team2_GiftWrap::css/slick-theme.css"/>
+        <script src="Team2_GiftWrap::js/carousel.js"/>
+         </head>
+    <body>
+        <referenceContainer name="giftwrap">
+            <block class="Team2\GiftWrap\Block\Widget\GiftWrap" name="giftwrap-content" template="Team2_GiftWrap::widget/GiftWrap.phtml" />
+             
+        </referenceContainer>
+         <referenceContainer name="before.body.end">
+             <block name="giftwrap.carousel.widget.js"
+                    class="Magento\Framework\View\Element\Template"
+                    template="Team2_GiftWrap::script.phtml" 
+            />
+        </referenceContainer>
+    </body>
+</page>

@@ -1,0 +1,7 @@
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget class="Team2\GiftWrap\Block\Widget\GiftWrap" id="giftwrap_widget">
+        <label>GiftWrap</label>
+        <description>This is a GiftWrap</description>
+    </widget>
+</widgets>
