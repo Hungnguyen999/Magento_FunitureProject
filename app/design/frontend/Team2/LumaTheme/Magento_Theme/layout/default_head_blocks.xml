@@ -12,5 +12,6 @@
         <css src="css/slick.css"/>
         <css src="css/carouselRelatedProduct.css"/>
         <css src="css/carouselUpsellProduct.css"/>
+        <css src="css/homepagefix.css"/>
     </head>
 </page>

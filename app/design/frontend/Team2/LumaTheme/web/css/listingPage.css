@@ -363,17 +363,3 @@
     display: block;
   }
 }
-
-/*fix luma theme*/
-/* .page-with-filter .product-list-view .image-hung {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-  width: 290px;
-  height: 255px;
-  padding-top: 0;
-  padding-left: 0%;
-} */

@@ -9,60 +9,61 @@
     font-style: normal;
     font-display: block;
 }
+
 [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    speak: never;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-  
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .icon-shopping-bag-svg-2:before {
-    content: "\e90c";
-  }
-  .icon-shopping-bag:before {
-    content: "\e906";
-  }
-  .icon-pencil-alt-solid:before {
-    content: "\e909";
-  }
-  .icon-times-solid:before {
-    content: "\e90a";
-  }
-  .icon-user:before {
-    content: "\e908";
-  }
-  .icon-facebook:before {
-    content: "\e900";
-  }
-  .icon-heart:before {
-    content: "\e901";
-  }
-  .icon-instagram:before {
-    content: "\e902";
-  }
-  .icon-linkedin-logo:before {
-    content: "\e903";
-  }
-  .icon-loupe:before {
-    content: "\e904";
-  }
-  .icon-menu:before {
-    content: "\e905";
-  }
-  .icon-shopping-bag-svg:before {
-    content: "\e90b";
-  }
-  .icon-twitter:before {
-    content: "\e907";
-  }
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shopping-bag-svg-2:before {
+  content: "\e90c";
+}
+.icon-shopping-bag:before {
+  content: "\e906";
+}
+.icon-pencil-alt-solid:before {
+  content: "\e909";
+}
+.icon-times-solid:before {
+  content: "\e90a";
+}
+.icon-user:before {
+  content: "\e908";
+}
+.icon-facebook:before {
+  content: "\e900";
+}
+.icon-heart:before {
+  content: "\e901";
+}
+.icon-instagram:before {
+  content: "\e902";
+}
+.icon-linkedin-logo:before {
+  content: "\e903";
+}
+.icon-loupe:before {
+  content: "\e904";
+}
+.icon-menu:before {
+  content: "\e905";
+}
+.icon-shopping-bag-svg:before {
+  content: "\e90b";
+}
+.icon-twitter:before {
+  content: "\e907";
+}
 
 /* Icon moon DUCANh */
 .service-widget {
@@ -364,7 +365,7 @@ i {
         font-size: 1.2rem;
     }
     .rating-summary .rating-result:before {
-        font-size: 2rem;
+        /*font-size: 2rem;*/
     }
     .product-widget .product-details {
         max-width: calc(100% - 65px);

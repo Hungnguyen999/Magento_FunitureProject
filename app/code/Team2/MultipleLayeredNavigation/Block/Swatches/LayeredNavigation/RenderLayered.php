@@ -1,9 +1,5 @@
 <?php
-/**
- * Multiple Layered Navigation
- * 
- * @author Slava Yurthev
- */
+
 namespace Team2\MultipleLayeredNavigation\Block\Swatches\LayeredNavigation;
 class RenderLayered extends \Magento\Swatches\Block\LayeredNavigation\RenderLayered {
 	protected $urlBuilder;

@@ -1,7 +1,7 @@
 <?php 
-namespace MagentoVendor\CRUD\Controller\Index;
+namespace MagentoVendor\CRUD\Controller\Point;
 
-
+use Magento\Framework\App\Action\Action;
 use Magento\Framework\Controller\ResultFactory;
 use Magento\Framework\View\Element\Template;
 use Magento\Framework\View\Result\Page;
@@ -38,8 +38,8 @@ class Point extends \Magento\Framework\App\Action\Action
         $page = $this->resultFactory->create(ResultFactory::TYPE_PAGE);
 
         /** @var Template $block */
-        $block = $page->getLayout()->getBlock('checkout.cart.reward.points.message.block');
-        $block->setData('reward_point',  "Vai ca lollll");
+        // $block = $page->getLayout()->getBlock('checkout.cart.reward.points.message.block');
+        // $block->setData('reward_point', 'abc');
 
         return $page;
 	}

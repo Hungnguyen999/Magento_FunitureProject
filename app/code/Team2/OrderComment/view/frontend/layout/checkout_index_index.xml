@@ -25,6 +25,7 @@
                                                                 <item name="before-place-order" xsi:type="array">
                                                                     <item name="children" xsi:type="array">
                                                                         <item name="comment" xsi:type="array">
+                                                                            <item name="sortOrder" xsi:type="string">99</item>
                                                                             <item name="component" xsi:type="string">Team2_OrderComment/js/view/checkout/order-comment-block</item>
                                                                         </item>
                                                                     </item>

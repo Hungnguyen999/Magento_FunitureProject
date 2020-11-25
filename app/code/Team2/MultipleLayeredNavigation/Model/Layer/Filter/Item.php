@@ -1,9 +1,5 @@
 <?php
-/**
- * Multiple Layered Navigation
- * 
- * @author Slava Yurthev
- */
+
 namespace Team2\MultipleLayeredNavigation\Model\Layer\Filter;
 use Magento\Framework\App\ObjectManager;
 
@@ -15,21 +11,21 @@ class Item extends \Magento\Catalog\Model\Layer\Filter\Item {
 			[$this->_htmlPagerBlock->getPageVarName() => null]
 		);
 	}
-	public function getUrl(){
-		return $this->_url->getFilterUrl(
-			$this->getFilter()->getRequestVar(),
-			$this->getValue(),
-			[$this->_htmlPagerBlock->getPageVarName() => null],
-			false
-		);
-	}
-	public function isActive(){
-		$values = ObjectManager::getInstance()->create(
-				\Team2\MultipleLayeredNavigation\Model\Url\Builder::class
-			)
-			->getValuesFromUrl($this->getFilter()->getRequestVar());
-		if(!empty($values)){
-			return in_array($this->getValue(), $values);
-		}
-	}
+	// public function getUrl(){
+	// 	return $this->_url->getFilterUrl(
+	// 		$this->getFilter()->getRequestVar(),
+	// 		$this->getValue(),
+	// 		[$this->_htmlPagerBlock->getPageVarName() => null],
+	// 		false
+	// 	);
+	// }
+	// public function isActive(){
+	// 	$values = ObjectManager::getInstance()->create(
+	// 			\Team2\MultipleLayeredNavigation\Model\Url\Builder::class
+	// 		)
+	// 		->getValuesFromUrl($this->getFilter()->getRequestVar());
+	// 	if(!empty($values)){
+	// 		return in_array($this->getValue(), $values);
+	// 	}
+	// }
 }

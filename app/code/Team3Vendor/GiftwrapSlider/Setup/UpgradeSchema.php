@@ -80,6 +80,42 @@ class UpgradeSchema implements UpgradeSchemaInterface
             );
 
         $setup->getConnection()
+        ->addColumn(
+            $setup->getTable($quoteTable),
+            'rewardpoint',
+            [
+                'type' => \Magento\Framework\DB\Ddl\Table::TYPE_INTEGER,
+                'default' => 0,
+                'nullable' => true,
+                'comment' =>'rewardpoint'
+            ]
+        );
+
+         $setup->getConnection()
+        ->addColumn(
+            $setup->getTable($quoteTable),
+            'rewardpointDB',
+            [
+                'type' => \Magento\Framework\DB\Ddl\Table::TYPE_INTEGER,
+                'default' => 0,
+                'nullable' => true,
+                'comment' =>'rewardpointDB'
+            ]
+        );
+
+         $setup->getConnection()
+        ->addColumn(
+            $setup->getTable($quoteTable),
+            'earnpoint',
+            [
+                'type' => \Magento\Framework\DB\Ddl\Table::TYPE_INTEGER,
+                'default' => 0,
+                'nullable' => true,
+                'comment' =>'earnpoint'
+            ]
+        );
+
+        $setup->getConnection()
             ->addColumn(
                 $setup->getTable($quoteTable),
                 'giftwrap_name',
@@ -115,6 +151,18 @@ class UpgradeSchema implements UpgradeSchemaInterface
                     'default' => 0.00,
                     'nullable' => true,
                     'comment' =>'Giftwrap'
+                ]
+            );
+
+         $setup->getConnection()
+            ->addColumn(
+                $setup->getTable($orderTable),
+                'flash_rewardpoint',
+                [
+                    'type' => \Magento\Framework\DB\Ddl\Table::TYPE_INTEGER,
+                    'default' => 0,
+                    'nullable' => true,
+                    'comment' =>'flash_rewardpoint'
                 ]
             );
 

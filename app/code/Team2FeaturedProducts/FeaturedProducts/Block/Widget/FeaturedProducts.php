@@ -95,9 +95,24 @@ class FeaturedProducts extends Template implements BlockInterface
 
     public function getProductNewArrival()
     {
+        $objectManager=   \Magento\Framework\App\ObjectManager::getInstance();
+
+        $attrSetName = 'GiftWrap';
+        $attribute_set_factoryCollection = $objectManager->get('\Magento\Eav\Model\ResourceModel\Entity\Attribute\Set\CollectionFactory');
+
+        $attribute_set_collection = $attribute_set_factoryCollection->create();
+
+        $attribute_set_collection
+        ->addFieldToFilter('entity_type_id',4)
+        ->addFieldToFilter('attribute_set_name',$attrSetName);
+
+        $att_set = current($attribute_set_collection->getData());
+        $attribute_set_id = $att_set["attribute_set_id"];
+
         $numberProduct = (int)$this->getData('numberProduct');
         $collection = $this->_productCollectionFactory->create();
         $collection->addAttributeToSelect('*');
+        $collection->addFieldToFilter('attribute_set_id',array('nin' => array($attribute_set_id)));
         $collection->addAttributeToSort('created_at', 'DESC');
         $collection->getSelect()->limit($numberProduct);
         return $collection;

@@ -137,6 +137,13 @@ class InstallSchema implements \Magento\Framework\Setup\InstallSchemaInterface
                     'Author'
                 )
                 ->addColumn(
+                    'comment',
+                    \Magento\Framework\DB\Ddl\Table::TYPE_TEXT,
+                    255,
+                    [],
+                    'Comment'
+                )
+                ->addColumn(
                     'created_at',
                     \Magento\Framework\DB\Ddl\Table::TYPE_TIMESTAMP,
                     null,

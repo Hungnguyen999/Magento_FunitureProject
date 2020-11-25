@@ -1,0 +1,1 @@
+<add id="MagentoVendor_AclRule::helloworld" title="Hello World" module="MagentoVendor_AclRule" sortOrder="51" resource="MagentoVendor_AclRule::helloworld"/>

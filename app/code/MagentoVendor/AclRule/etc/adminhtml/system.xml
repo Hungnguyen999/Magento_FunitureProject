@@ -1,0 +1,3 @@
+<section id="helloworld" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+    <resource>MagentoVendor_AclRule::helloworld_configuration</resource>
+</section>

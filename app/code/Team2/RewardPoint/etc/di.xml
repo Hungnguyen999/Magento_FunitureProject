@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <virtualType name="DatapointGridDataProvider" type="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider">
+        <arguments>
+            <argument name="collection" xsi:type="object" shared="false">Team2\RewardPoint\Model\ResourceModel\DataPoint\Collection</argument>
+        </arguments>
+    </virtualType>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="rewardpoint_datapoint_listing_data_source" xsi:type="string">Team2\RewardPoint\Model\ResourceModel\DataPoint\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Team2\RewardPoint\Model\ResourceModel\DataPoint\Grid\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">reward_point_history</argument>
+            <argument name="eventPrefix" xsi:type="string">team2_rewardpoint_grid_collection</argument>
+            <argument name="eventObject" xsi:type="string">team2_rewardpoint_collection</argument>
+            <argument name="resourceModel" xsi:type="string">Team2\RewardPoint\Model\ResourceModel\DataPoint</argument>
+        </arguments>
+    </type>
+</config>

@@ -1,9 +1,5 @@
 <?php
-/**
- * Multiple Layered Navigation
- * 
- * @author Slava Yurthev
- */
+
 namespace Team2\MultipleLayeredNavigation\Model\Layer;
 
 class ItemCollectionProvider implements \Magento\Catalog\Model\Layer\ItemCollectionProviderInterface {

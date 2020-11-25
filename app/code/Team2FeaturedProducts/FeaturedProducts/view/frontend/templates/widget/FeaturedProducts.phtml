@@ -93,7 +93,8 @@ foreach($categories as $category)
                                 $listBlock = $objectManager->get('\Magento\Catalog\Block\Product\ListProduct');
                                 $addToCartUrl =  $listBlock->getAddToCartUrl($_item);
                                 $image_url = $imageHelper->init($_item, 'product_thumbnail_image')->setImageFile($_item->getFile())->resize($width,$height)->getUrl();
-                                ?>
+                            ?>
+                            
                             <a href="<?=$_item->getProductUrl()?>" class="product-item-photo">
                                 <img src="<?= $image_url ?>">
                             </a>
@@ -219,3 +220,4 @@ foreach($categories as $category)
 ?>
 
 </div>
+

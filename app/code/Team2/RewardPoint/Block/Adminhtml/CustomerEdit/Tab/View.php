@@ -2,6 +2,7 @@
 
 namespace Team2\RewardPoint\Block\Adminhtml\CustomerEdit\Tab;
 
+use Magento\Framework\App\ObjectManager;
 use Team2\RewardPoint\Model\ResourceModel\DataExample\CollectionFactory;
 
 class View extends \Magento\Backend\Block\Template implements \Magento\Ui\Component\Layout\Tabs\TabInterface
@@ -24,7 +25,7 @@ class View extends \Magento\Backend\Block\Template implements \Magento\Ui\Compon
         CollectionFactory $historyCollectionFactory,
 
         array $data = []
-    )HelloWorld
+    )
     {
         $this->_historyCollectionFactory = $historyCollectionFactory;
         $this->_coreRegistry = $registry;
@@ -39,6 +40,15 @@ class View extends \Magento\Backend\Block\Template implements \Magento\Ui\Compon
         $customerId = $this->_coreRegistry->registry(\Magento\Customer\Controller\RegistryConstants::CURRENT_CUSTOMER_ID);
         $collection = $this->_historyCollectionFactory->create()
         ->addFieldToFilter('customer_id', $customerId);
+        return $collection;
+    }
+
+    public function getHistoryCollectionFront(){
+        $objectManager = ObjectManager::getInstance();
+        $customerSession = $objectManager->create('Magento\Customer\Model\Session');
+        $customerId = $customerSession->getCustomer()->getId();
+        $collection = $this->_historyCollectionFactory->create()
+            ->addFieldToFilter('customer_id', $customerId);
         return $collection;
     }
     /**

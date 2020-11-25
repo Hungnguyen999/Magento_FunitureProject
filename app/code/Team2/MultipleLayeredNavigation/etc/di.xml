@@ -1,12 +1,7 @@
 <?xml version="1.0"?>
-<!--
-/**
- * Multiple Layered Navigation
- * 
- * @author Slava Yurthev
- */
--->
+
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
 	<virtualType name="categoryFilterList" type="Magento\Catalog\Model\Layer\FilterList">
 		<arguments>
 			<argument name="filters" xsi:type="array">
@@ -21,6 +16,7 @@
 			</argument>
 		</arguments>
 	</virtualType>
+	
 	<type name="Team2\MultipleLayeredNavigation\Model\Layer\Filter\Item">
 		<arguments>
 			<argument name="url" xsi:type="object">Team2\MultipleLayeredNavigation\Model\Url\Builder</argument>
@@ -31,7 +27,9 @@
 			<argument name="instanceName" xsi:type="string">Team2\MultipleLayeredNavigation\Model\Layer\Filter\Item</argument>
 		</arguments>
 	</type>
+	
 	<preference for="Magento\Swatches\Block\LayeredNavigation\RenderLayered" type="Team2\MultipleLayeredNavigation\Block\Swatches\LayeredNavigation\RenderLayered" />
-	<preference for="Magento\Elasticsearch\SearchAdapter\Query\Builder\Sort"
-                type="Team2\MultipleLayeredNavigation\Plugin\Magento\Elasticsearch\SearchAdapter\Query\Builder\Sort" />
+
+	<preference for="Magento\Elasticsearch\SearchAdapter\Query\Builder\Sort" type="Team2\MultipleLayeredNavigation\SearchAdapter\Query\Builder\Sort" />
+
 </config>

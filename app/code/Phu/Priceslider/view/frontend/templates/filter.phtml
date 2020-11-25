@@ -44,7 +44,6 @@ require([
 				updateLabel();
 			},
 			change: function( event, ui ) {
-            
 				window.location.href = price_url.replace("price=","price="+ui.values[0]+"-"+ui.values[1]+".01");
 			}
 		});
@@ -52,11 +51,13 @@ require([
 });
 </script>
 
-    
-<div id="price-slider"></div>
+
 <p>
-	<input type="text" id="amount" readonly style="border:0; color:#000000; font-weight:bold;">
+	<label for="amount"><?= __('Price range:') ?></label>
+	<input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
 </p>
+<div id="price-slider"></div>
+
 <?php else:?>
 <ol class="items">
     <?php foreach ($filterItems as $filterItem): ?>
