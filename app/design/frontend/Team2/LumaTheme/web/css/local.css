@@ -1,5 +1,5 @@
-section {
-    margin-bottom: -3rem;
+section.mb-0 {
+    margin-bottom: -5rem;
     padding-top: 1rem;
 }
 
@@ -41,6 +41,13 @@ section {
     #shopbutton {
         text-decoration: none;
         color: #606ea6;
+    }
+    section.mb-0 {
+        margin-bottom: -1rem;
+        padding-top: 1rem;
+    }
+    .cms-home.section-feature-product {
+        padding-left: 1rem;
     }
 }
 
