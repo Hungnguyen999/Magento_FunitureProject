@@ -310,7 +310,7 @@ return [
         'PayPal_Braintree' => 1,
         'PayPal_BraintreeGraphQl' => 1,
         'Phu_Priceslider' => 1,
-        'RewardPoint_ApplyRwP' => 1,
+        'RewardPoint_ApplyRwP' => 0,
         'RewardPoint_Customer' => 1,
         'RewardPoint_CustomerSide' => 1,
         'SR_CategoryImage' => 1,

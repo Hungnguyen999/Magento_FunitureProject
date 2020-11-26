@@ -63,3 +63,43 @@ $mainImageData = $mainImage ?
         }
     }
 </script>
+<script type="text/javascript">
+    
+        require(['jquery', 'mage/gallery/gallery'], function($, gallery){
+
+        // $(".img_producto_container").ready(function() {
+        //     console.log('456');
+        // });
+
+
+        $('[data-gallery-role=gallery-placeholder]').on('gallery:loaded', function () {
+            $(".fotorama__stage")
+            // tile mouse actions
+            .on("mouseover", function() {
+                    // console.log('123');
+                    $(".fotorama__stage__frame")
+                    .css({ transform: "scale(1.6,1.6)" });
+
+                    $("#zoomIconContainer")
+                    .css({ "display" : "flex" });
+
+                })
+            .on("mouseout", function() {
+                    $(".fotorama__stage__frame")
+                    .css({ transform: "scale(1,1)" });
+
+                    $("#zoomIconContainer")
+                    .css({ "display" : "none" });
+                })
+            .on("mousemove", function(e) {
+                    $(".fotorama__stage__frame")
+                    .css({
+                        "transform-origin":
+                        ((e.pageX - $(this).offset().left) / $(this).width()) * 100 + "% " +
+                        ((e.pageY - $(this).offset().top) / $(this).height()) * 100 + "%"
+                    });
+                });
+        });
+        });
+
+</script>
