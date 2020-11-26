@@ -13,7 +13,7 @@
 <!--  <move element="product.info.social" destination="product.info.form.content"/>  -->
 <!--  <move element="product.info.addto" destination="product.info.addtocart.additional" />  -->
 <!--  <move element="product.info.addto" destination="product.info.options.wrapper.bottom" after="product.info.addtocart">  -->
-<move element="view.addto.wishlist" destination="product.info.options.wrapper.bottom" after="product.info.addtocart"/>
+<!-- <move element="view.addto.wishlist" destination="product.info.options.wrapper.bottom" after="product.info.addtocart"/> -->
 <referenceContainer name="product.info.main">
 <block class="Magento\Framework\View\Element\Template" name="share.list" template="Magento_Catalog::shareList.phtml" after="-"/>
 </referenceContainer>
