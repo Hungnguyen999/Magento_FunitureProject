@@ -73,10 +73,11 @@ if ($customerSession->isLoggedIn()) {
                 <p class="reward-point-left">You have <strong><?php echo $pointCurrent ?></strong> points left</p>
                 <p class="reward-point-trace">1 for every <?php echo $pointSpendRate ?>  USD</p>
             </div>
-            <form id="discount-coupon-form" action="<?= $block->escapeUrl($block->getUrl('reward_points/cart/rewardPost')) ?>" method="post" data-mage-init='{"discountCode":{"couponCodeSelector": "#reward_point",
-"removeCouponSelector": "#remove-reward",
-"applyButton": "button.action.apply",
-"cancelButton": "button.action.cancel"}}'>
+            <!--Chinh lai cai data-init-->
+            <form id="discount-coupon-form" action="<?= $block->escapeUrl($block->getUrl('reward_points/cart/rewardPost')) ?>" method="post" data-mage-init='{"rewardCode":{"rewardCodeSelector": "#reward_point",
+                "removeRewardCouponSelector": "#remove-reward",
+                "applyButton": "button.action.apply",
+                "cancelButton": "button.action.cancel"}}'>
                 <div class="fieldset coupon<?= $hasReward ? ' applied' : '' ?>">
                     <input type="hidden" name="remove" id="remove-reward" value="0" />
                     <div class="field">
