@@ -155,7 +155,7 @@
 }
 @media only screen and (max-width: 380px) {
     .main-banner-left-block {
-        height: 33rem;
+        height: 34rem;
     }
     .main-banner-right-block {
         padding-left: unset !important;
