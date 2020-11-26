@@ -302,7 +302,6 @@ return [
         'Klarna_Onsitemessaging' => 1,
         'Klarna_Kp' => 1,
         'MT_BottomDescription' => 1,
-        'MagentoVendor_AclRule' => 1,
         'MagentoVendor_CRUD' => 1,
         'MagentoVendor_HelloBlock' => 1,
         'MagentoVendor_HelloJson' => 1,
