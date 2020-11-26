@@ -343,11 +343,11 @@
     .filter.active .filter-title strong:after {
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      font-size: 30px;
+      font-size: 15px;
       line-height: inherit;
       color: white;
       content: '\e616';
-      font-family: 'icons-blank-theme';
+      font-family: 'luma-icons';
       vertical-align: middle;
       display: inline-block;
       font-weight: 900;
