@@ -24,7 +24,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.icon-bars-solid:before {
+    content: "\e90d";
+  }
 .icon-shopping-bag-svg-2:before {
   content: "\e90c";
 }
