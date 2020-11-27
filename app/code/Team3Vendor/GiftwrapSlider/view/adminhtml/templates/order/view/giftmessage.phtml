@@ -1,11 +1,51 @@
 <?php
-// echo '123';
+if ($block->getPriceGiftwrap() != 0) {
 ?>
-<section class="admin__page-section">
-    <div class="admin__page-section-title">
-        <span class="title"><?php /* @escapeNotVerified */ echo __('Gift Message') ?></span>
-    </div>
-    <div class="admin__page-section-content">
-        <?php echo $block->getOrderGiftmessage();?>
-    </div>
-</section>
+    <section class="admin__page-section">
+        <div class="admin__page-section-title">
+            <span class="title"><?php /* @escapeNotVerified */ echo __('Gift Wrap') ?></span>
+        </div>
+        <div class="admin__page-section-content">
+            <div class="admin__page-section-item gift-wrap-history gw-info">
+                <div class="admin__page-section-item-title">
+                    <span class="title">Gift Option</span>
+                </div>
+                <div class="gw-name">
+                    <div class="gw-title">
+                        Wrap Name:
+                    </div>
+                    <div class="gw-content">
+                        <?php echo $block->getNameGiftwrap(); ?>
+                    </div>
+
+                </div>
+                <div class="gw-price">
+                    <div class="gw-title">
+                        Price:
+                    </div>
+                    <div class="gw-content">
+                        $<?php echo $block->getPriceGiftwrap(); ?>
+                    </div>
+
+                </div>
+                <div class="gw-hide">
+                    <div class="gw-title">
+                        Hide price:
+                    </div>
+                    <div class="gw-content">
+                        <?php if ($block->getOrderHiddenprice()) {?>
+                        <?php echo $block->getOrderHiddenprice();}else {echo "No";}?>
+                    </div>
+
+                </div>
+            </div>
+            <div class="admin__page-section-item gift-message-history gw-msg">
+                <div class="admin__page-section-item-title">
+                    <span class="title">Gift Message</span>
+                </div>
+                <?php echo $block->getOrderGiftmessage(); ?>
+            </div>
+
+        </div>
+    </section>
+<?php } ?>

@@ -50,6 +50,7 @@ class AddGiftwrapToOrderObserver implements ObserverInterface
         $giftwrap = $quote->getGiftwrap();
         $giftwrapName = $quote->getGiftwrapName();
         $giftmessage = $quote->getGiftmessage();
+        $hiddenprice = $quote->getHiddenprice();
         if (!$giftwrap) {
             return $this;
         }
@@ -58,7 +59,8 @@ class AddGiftwrapToOrderObserver implements ObserverInterface
         $order->setData('giftwrap', $giftwrap);
         $order->setData('giftwrap_name', $giftwrapName);
         $order->setData('giftmessage', $giftmessage);
-        
+        $order->setData('hiddenprice', $hiddenprice);
+
 		return $this;
     }
 }
