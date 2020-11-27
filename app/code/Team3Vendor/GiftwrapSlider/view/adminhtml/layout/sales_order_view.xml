@@ -7,7 +7,9 @@
         	<referenceContainer name="order_totals">
 	            <block class="Team3Vendor\GiftwrapSlider\Block\Adminhtml\Sales\Totals" name="giftwrap"/>
 	        </referenceContainer>
-        	<block class="Team3Vendor\GiftwrapSlider\Block\Adminhtml\Sales\Giftmessage" template="Team3Vendor_GiftwrapSlider::order/view/giftmessage.phtml" name="giftmessage"/>
     	</referenceContainer>
+		<referenceBlock name="order_additional_info">
+            <block class="Team3Vendor\GiftwrapSlider\Block\Adminhtml\Sales\Giftmessage" template="Team3Vendor_GiftwrapSlider::order/view/giftmessage.phtml" name="giftmessage"/>
+        </referenceBlock>
     </body>
 </page>

@@ -36,5 +36,19 @@ class Giftmessage extends \Magento\Framework\View\Element\Template
         return $this->getOrder()->getData('giftmessage');
     }
 
+    public function getOrderHiddenprice()
+    {
+        return $this->getOrder()->getData('hiddenprice');
+    }
+
+    public function getNameGiftwrap()
+    {
+        return $this->getOrder()->getData('giftwrap_name');
+    }
+
+    public function getPriceGiftwrap()
+    {
+        return $this->getOrder()->getData('giftwrap');
+    }
 
 }

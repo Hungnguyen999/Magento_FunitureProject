@@ -64,6 +64,18 @@ class UpgradeSchema implements UpgradeSchemaInterface
                     'comment' =>'Giftmessage'
                 ]
             );
+        $setup->getConnection()
+            ->addColumn(
+                $setup->getTable($quoteAddressTable),
+                'hiddenprice',
+                [
+                    'type' => \Magento\Framework\DB\Ddl\Table::TYPE_TEXT,
+                    'length' =>'255',
+                    'default' => '',
+                    'nullable' => true,
+                    'comment' =>'Hiddenprice'
+                ]
+            );
 
         //Quote tables
         $setup->getConnection()
@@ -139,6 +151,18 @@ class UpgradeSchema implements UpgradeSchemaInterface
                     'comment' =>'Giftmessage'
                 ]
             );
+        $setup->getConnection()
+            ->addColumn(
+                $setup->getTable($quoteTable),
+                'hiddenprice',
+                [
+                    'type' => \Magento\Framework\DB\Ddl\Table::TYPE_TEXT,
+                    'length' =>'255',
+                    'default' => '',
+                    'nullable' => true,
+                    'comment' =>'Hiddenprice'
+                ]
+            );
 
         //Order tables
         $setup->getConnection()
@@ -188,6 +212,18 @@ class UpgradeSchema implements UpgradeSchemaInterface
                     'default' => '',
                     'nullable' => true,
                     'comment' =>'Giftmessage'
+                ]
+            );
+        $setup->getConnection()
+            ->addColumn(
+                $setup->getTable($orderTable),
+                'hiddenprice',
+                [
+                    'type' => \Magento\Framework\DB\Ddl\Table::TYPE_TEXT,
+                    'length' =>'255',
+                    'default' => '',
+                    'nullable' => true,
+                    'comment' =>'Hiddenprice'
                 ]
             );
 

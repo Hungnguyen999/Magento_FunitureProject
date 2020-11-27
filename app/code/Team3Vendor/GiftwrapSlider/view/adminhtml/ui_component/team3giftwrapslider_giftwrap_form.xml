@@ -52,8 +52,8 @@
                     <item name="visible" xsi:type="boolean">true</item>
 
                     <!-- none editable text -->
-                    <item name="elementTmpl" xsi:type="string">ui/form/element/text</item> 
-                    
+                    <item name="elementTmpl" xsi:type="string">ui/form/element/text</item>
+
                     <item name="dataType" xsi:type="string">text</item>
                     <item name="formElement" xsi:type="string">input</item>
                     <item name="source" xsi:type="string">giftwrap</item>
@@ -98,7 +98,7 @@
                 </item>
             </argument>
         </field>
-        
+
         <field name="image">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
@@ -122,7 +122,7 @@
         <field name="title">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
-                    <item name="label" xsi:type="string">Title</item>
+                    <item name="label" xsi:type="string">Wrap Name</item>
                     <item name="visible" xsi:type="boolean">true</item>
                     <item name="dataType" xsi:type="string">text</item>
                     <item name="formElement" xsi:type="string">input</item>
@@ -144,33 +144,5 @@
                 </item>
             </argument>
         </field>
-
-        <field name="created_at">
-            <argument name="data" xsi:type="array">
-                <item name="config" xsi:type="array">
-                    <item name="label" xsi:type="string">Created At</item>
-                    <item name="visible" xsi:type="boolean">true</item>
-                    <item name="dataType" xsi:type="string">text</item>
-                    <item name="formElement" xsi:type="string">input</item>
-                    <item name="source" xsi:type="string">giftwrap</item>
-                    <item name="dataScope" xsi:type="string">created_at</item>
-                </item>
-            </argument>
-        </field>
-
-        <field name="updated_at">
-            <argument name="data" xsi:type="array">
-                <item name="config" xsi:type="array">
-                    <item name="label" xsi:type="string">Updated At</item>
-                    <item name="visible" xsi:type="boolean">true</item>
-                    <item name="dataType" xsi:type="string">text</item>
-                    <item name="formElement" xsi:type="string">input</item>
-                    <item name="source" xsi:type="string">giftwrap</item>
-                    <item name="dataScope" xsi:type="string">updated_at</item>
-                </item>
-            </argument>
-        </field>
-
-
     </fieldset>
 </form>
